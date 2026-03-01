@@ -3,67 +3,67 @@
     {
       "id": "hero-bg",
       "description": "Dreamy night sky with stars",
-      "imageUrl": "/first_meet.HEIC",
+      "imageUrl": "/first_meet.jpg",
       "imageHint": "night sky stars"
     },
     {
       "id": "first-meet",
-      "description": "Placeholder for our first meeting",
-      "imageUrl": "/first_meet.HEIC",
+      "description": "Our first meeting",
+      "imageUrl": "/first_meet.jpg",
       "imageHint": "couple meeting"
     },
     {
       "id": "first-date",
-      "description": "Placeholder for our first date",
-      "imageUrl": "https://images.unsplash.com/photo-1529521001454-2cf987c34008?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb21hbnRpYyUyMGRpbm5lcnxlbnwwfHx8fDE3NzIzMDI5Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Our first date",
+      "imageUrl": "https://images.unsplash.com/photo-1529521001454-2cf987c34008?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "romantic dinner"
     },
     {
       "id": "first-trip",
-      "description": "Placeholder for our first trip together",
-      "imageUrl": "https://images.unsplash.com/photo-1706402642314-170453d70bc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb3VwbGUlMjB0cmF2ZWxpbmd8ZW58MHx8fHwxNzcyMzkyMzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Our first trip together",
+      "imageUrl": "https://images.unsplash.com/photo-1706402642314-170453d70bc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "couple traveling"
     },
     {
       "id": "best-memories",
-      "description": "Placeholder for our best memories",
-      "imageUrl": "https://images.unsplash.com/photo-1541679368093-5c967ac6de11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMGNvdXBsZXxlbnwwfHx8fDE3NzIzMjQ4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Our best memories",
+      "imageUrl": "https://images.unsplash.com/photo-1541679368093-5c967ac6de11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "happy couple"
     },
     {
       "id": "today",
-      "description": "Placeholder for today - 4 years",
-      "imageUrl": "https://images.unsplash.com/photo-1733515371242-2c7f8255fde6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhbm5pdmVyc2FyeSUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc3MjM5MjM4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "4 years celebration",
+      "imageUrl": "https://images.unsplash.com/photo-1733515371242-2c7f8255fde6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "anniversary celebration"
     },
     {
       "id": "forever",
-      "description": "Placeholder for forever",
-      "imageUrl": "https://images.unsplash.com/photo-1514480657081-a987d9a45e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Waiting for a lifetime",
+      "imageUrl": "https://images.unsplash.com/photo-1514480657081-a987d9a45e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "eternity love"
     },
     {
       "id": "gallery-1",
       "description": "Gallery image 1",
-      "imageUrl": "https://images.unsplash.com/photo-1514480657081-a987d9a45e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyb21hbnRpYyUyMGNvdXBsZXxlbnwwfHx8fDE3NzIzNjEzNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1514480657081-a987d9a45e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "romantic couple"
     },
     {
       "id": "gallery-2",
       "description": "Gallery image 2",
-      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob2xkaW5nJTIwaGFuZHN8ZW58MHx8fHwxNzcyMzUzMDkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "holding hands"
     },
     {
       "id": "gallery-3",
       "description": "Gallery image 3",
-      "imageUrl": "https://images.unsplash.com/photo-1559494007-9f5847c49d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdW5zZXQlMjBiZWFjaHxlbnwwfHx8fDE3NzIzMTE1MTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559494007-9f5847c49d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "sunset beach"
     },
     {
       "id": "manifestation",
       "description": "Our wedding manifestation",
-      "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc3MjM5Mjc0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "wedding couple"
     }
   ]
