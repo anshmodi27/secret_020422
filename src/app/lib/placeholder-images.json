@@ -1,0 +1,59 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Dreamy night sky with stars",
+      "imageUrl": "https://picsum.photos/seed/romantic-sky/1080/1920",
+      "imageHint": "night sky stars"
+    },
+    {
+      "id": "first-meet",
+      "description": "Placeholder for our first meeting",
+      "imageUrl": "https://picsum.photos/seed/first-meet/600/800",
+      "imageHint": "couple meeting"
+    },
+    {
+      "id": "first-date",
+      "description": "Placeholder for our first date",
+      "imageUrl": "https://picsum.photos/seed/first-date/600/800",
+      "imageHint": "romantic dinner"
+    },
+    {
+      "id": "first-trip",
+      "description": "Placeholder for our first trip together",
+      "imageUrl": "https://picsum.photos/seed/first-trip/600/800",
+      "imageHint": "couple traveling"
+    },
+    {
+      "id": "best-memories",
+      "description": "Placeholder for our best memories",
+      "imageUrl": "https://picsum.photos/seed/memories/600/800",
+      "imageHint": "happy couple"
+    },
+    {
+      "id": "today",
+      "description": "Placeholder for today - 4 years",
+      "imageUrl": "https://picsum.photos/seed/anniversary/600/800",
+      "imageHint": "anniversary celebration"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Gallery image 1",
+      "imageUrl": "https://picsum.photos/seed/gal1/800/1000",
+      "imageHint": "romantic couple"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Gallery image 2",
+      "imageUrl": "https://picsum.photos/seed/gal2/800/1000",
+      "imageHint": "holding hands"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Gallery image 3",
+      "imageUrl": "https://picsum.photos/seed/gal3/800/1000",
+      "imageHint": "sunset beach"
+    }
+  ]
+}
