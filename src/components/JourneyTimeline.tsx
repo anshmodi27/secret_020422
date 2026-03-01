@@ -1,9 +1,11 @@
+
 "use client";
 
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Heart } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const milestones = [
   {
@@ -41,9 +43,18 @@ const milestones = [
     description: 'Always choosing you.',
     image: PlaceHolderImages.find(img => img.id === 'today')?.imageUrl || 'https://picsum.photos/seed/anniversary/600/800',
   },
+  {
+    id: 'forever',
+    title: 'FOREVER',
+    date: 'ETERNITY',
+    description: 'Waiting for a lifetime of us.',
+    image: PlaceHolderImages.find(img => img.id === 'forever')?.imageUrl || 'https://picsum.photos/seed/forever/600/800',
+  },
 ];
 
 export function JourneyTimeline() {
+  const isEvenTotal = milestones.length % 2 === 0;
+
   return (
     <section id="journey" className="py-20 px-4 relative overflow-hidden">
       <div className="max-w-md mx-auto">
@@ -72,17 +83,24 @@ export function JourneyTimeline() {
           </div>
 
           {milestones.map((item, index) => {
-            const isEven = index % 2 === 0;
+            const isLast = index === milestones.length - 1;
+            const shouldCenter = isEvenTotal && isLast;
+            const isEvenColumn = index % 2 === 0;
+
             return (
               <div 
                 key={item.id} 
-                className={`flex flex-col items-center text-center animate-fade-in ${
-                  isEven ? 'translate-y-0' : 'translate-y-8'
-                }`}
+                className={cn(
+                  "flex flex-col items-center text-center animate-fade-in transition-all duration-700",
+                  shouldCenter ? "col-span-2 translate-y-4" : isEvenColumn ? "translate-y-0" : "translate-y-8"
+                )}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Heart Container */}
-                <div className="relative w-32 h-32 md:w-40 md:h-40 mb-4 group">
+                <div className={cn(
+                  "relative group transition-transform hover:scale-105",
+                  shouldCenter ? "w-40 h-40 md:w-48 md:h-48 mb-6" : "w-32 h-32 md:w-40 md:h-40 mb-4"
+                )}>
                   <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/40 transition-colors" />
                   <div className="relative w-full h-full mask-heart bg-white overflow-hidden glow-pink border-2 border-primary/30">
                     <Image 
@@ -95,19 +113,19 @@ export function JourneyTimeline() {
                   </div>
                   {/* Small Floating Heart Decor */}
                   <div className="absolute -bottom-1 -right-1 bg-background p-1 rounded-full border border-primary/50 shadow-lg">
-                    <Heart className="w-3 h-3 text-primary fill-primary" />
+                    <Heart className={cn("text-primary fill-primary", shouldCenter ? "w-4 h-4" : "w-3 h-3")} />
                   </div>
                 </div>
 
                 {/* Text Content */}
-                <div className="space-y-1 max-w-[140px]">
+                <div className={cn("space-y-1", shouldCenter ? "max-w-xs" : "max-w-[140px]")}>
                   <span className="text-accent text-[8px] font-pixel uppercase block opacity-80">
                     {item.date}
                   </span>
-                  <h3 className="font-pixel text-[10px] text-white leading-none pt-1">
+                  <h3 className={cn("font-pixel text-white leading-none pt-1", shouldCenter ? "text-sm" : "text-[10px]")}>
                     {item.title}
                   </h3>
-                  <p className="font-body text-xs text-muted-foreground/80 italic line-clamp-2">
+                  <p className={cn("font-body text-muted-foreground/80 italic line-clamp-3", shouldCenter ? "text-sm mt-2" : "text-xs")}>
                     {item.description}
                   </p>
                 </div>
