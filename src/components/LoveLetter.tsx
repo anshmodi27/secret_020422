@@ -63,7 +63,7 @@ export function LoveLetter() {
           <div className="absolute -top-4 -right-4 bg-primary/20 p-8 rounded-full blur-2xl group-hover:bg-primary/30 transition-colors" />
           
           {/* Letter Header */}
-          <div className="flex justify-between items-start mb-8 border-b border-white/10 pb-6 relative z-10">
+          <div className="flex justify-between items-start mb-10 border-b border-white/10 pb-6 relative z-10">
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-primary font-pixel text-[10px] tracking-widest">
                 <Mail size={16} className="animate-pulse" />
@@ -76,14 +76,23 @@ export function LoveLetter() {
             </div>
           </div>
 
-          {/* Letter Content */}
-          <div className="font-cursive text-xl md:text-2xl leading-relaxed whitespace-pre-wrap min-h-[400px] text-white/90 relative z-10 text-glow-pink">
-            {displayedText}
-            <span className="inline-block w-2 h-6 bg-primary ml-1 animate-cursor-blink shadow-[0_0_10px_rgba(229,133,186,1)]" />
-          </div>
+          {/* Letter Content Area with aligned lines */}
+          <div className="relative z-10">
+            {/* The Text Container */}
+            <div className="font-cursive text-2xl md:text-3xl leading-[3rem] whitespace-pre-wrap min-h-[450px] text-white/90 text-glow-pink">
+              {displayedText}
+              <span className="inline-block w-2 h-7 bg-primary ml-1 translate-y-1 animate-cursor-blink shadow-[0_0_10px_rgba(229,133,186,1)]" />
+            </div>
 
-          {/* Subtle decorative lines for a refined "stationery" look */}
-          <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05] bg-[linear-gradient(transparent_97%,_#fff_97%)] bg-[length:100%_2.5rem]" />
+            {/* Background Stationery Lines - precisely matched to leading-[3rem] */}
+            <div 
+              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.1]" 
+              style={{
+                backgroundImage: 'linear-gradient(transparent 2.9rem, #fff 2.9rem)',
+                backgroundSize: '100% 3rem'
+              }}
+            />
+          </div>
           
           {/* Bottom Gradient Accent */}
           <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
