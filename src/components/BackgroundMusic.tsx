@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -11,27 +10,47 @@ export function BackgroundMusic() {
   const [hasInteracted, setHasInteracted] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // OPTION: Change this path to your local mp3 file in the /public folder
-  // For example: "/music.mp3" if your file is at public/music.mp3
+  // Path to the local mp3 file in the /public folder
   const musicUrl = "/background-music.mp3"; 
   const fallbackUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
   useEffect(() => {
-    const handleFirstInteraction = () => {
+    const startAudio = () => {
       if (!hasInteracted && audioRef.current) {
         setHasInteracted(true);
         audioRef.current.play()
-          .then(() => setIsPlaying(true))
-          .catch(e => console.log("Autoplay blocked, waiting for more interaction."));
+          .then(() => {
+            setIsPlaying(true);
+            // Remove listeners once playing starts
+            removeListeners();
+          })
+          .catch(e => {
+            console.log("Autoplay blocked, waiting for more interaction.");
+            // Keep listeners if play failed
+            setHasInteracted(false);
+          });
       }
     };
 
-    window.addEventListener('click', handleFirstInteraction);
-    window.addEventListener('scroll', handleFirstInteraction);
+    const removeListeners = () => {
+      window.removeEventListener('click', startAudio);
+      window.removeEventListener('scroll', startAudio);
+      window.removeEventListener('touchstart', startAudio);
+      window.removeEventListener('mousedown', startAudio);
+    };
+
+    // Add multiple interaction listeners for mobile and desktop
+    window.addEventListener('click', startAudio);
+    window.addEventListener('scroll', startAudio);
+    window.addEventListener('touchstart', startAudio);
+    window.addEventListener('mousedown', startAudio);
+
+    // Initial attempt (might be blocked by browser)
+    const timeout = setTimeout(startAudio, 1000);
 
     return () => {
-      window.removeEventListener('click', handleFirstInteraction);
-      window.removeEventListener('scroll', handleFirstInteraction);
+      removeListeners();
+      clearTimeout(timeout);
     };
   }, [hasInteracted]);
 
