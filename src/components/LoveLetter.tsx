@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, Heart } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const FULL_LETTER_TEXT = `My Dearest Love,
 
@@ -47,43 +48,50 @@ export function LoveLetter() {
       } else {
         clearInterval(typingInterval);
       }
-    }, 30); // Adjust speed here
+    }, 30);
 
     return () => clearInterval(typingInterval);
   }, [isTypingStarted]);
 
   return (
-    <section id="love-letter" className="py-24 px-6 relative overflow-hidden bg-black/20">
+    <section id="love-letter" className="py-24 px-6 relative overflow-hidden">
       <div className="max-w-2xl mx-auto" ref={containerRef}>
-        {/* Email/Letter Design */}
-        <div className="bg-[#fdfcf0] text-gray-800 p-8 md:p-12 rounded-lg shadow-2xl border-t-[20px] border-primary relative">
-          {/* Letter Stamp/Header */}
-          <div className="flex justify-between items-start mb-8 border-b border-gray-200 pb-4">
-            <div className="space-y-1">
-              <div className="flex items-center gap-2 text-primary font-pixel text-[10px]">
-                <Mail size={16} />
+        {/* Transparent Glass Letter Design */}
+        <div className="glass-card p-8 md:p-12 rounded-3xl shadow-2xl border-t-4 border-primary/50 relative glow-pink overflow-hidden group">
+          
+          {/* Decorative Corner Heart */}
+          <div className="absolute -top-4 -right-4 bg-primary/20 p-8 rounded-full blur-2xl group-hover:bg-primary/30 transition-colors" />
+          
+          {/* Letter Header */}
+          <div className="flex justify-between items-start mb-8 border-b border-white/10 pb-6 relative z-10">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-primary font-pixel text-[10px] tracking-widest">
+                <Mail size={16} className="animate-pulse" />
                 <span>TO: MY FOREVER</span>
               </div>
-              <p className="text-xs text-gray-400 font-body">Subject: 4 Beautiful Years</p>
+              <p className="text-xs text-muted-foreground font-body italic">Subject: 4 Beautiful Years Together</p>
             </div>
-            <div className="w-12 h-16 bg-primary/10 border-2 border-dashed border-primary/30 flex items-center justify-center rotate-3 rounded-sm">
-              <span className="font-pixel text-[8px] text-primary/50">LOVE</span>
+            <div className="w-12 h-16 bg-white/5 border border-dashed border-primary/40 flex items-center justify-center rotate-6 rounded-lg backdrop-blur-sm">
+              <Heart className="text-primary/40 fill-primary/20 w-6 h-6" />
             </div>
           </div>
 
           {/* Letter Content */}
-          <div className="font-cursive text-xl md:text-2xl leading-relaxed whitespace-pre-wrap min-h-[400px]">
+          <div className="font-cursive text-xl md:text-2xl leading-relaxed whitespace-pre-wrap min-h-[400px] text-white/90 relative z-10 text-glow-pink">
             {displayedText}
-            <span className="inline-block w-2 h-5 bg-primary ml-1 animate-cursor-blink" />
+            <span className="inline-block w-2 h-6 bg-primary ml-1 animate-cursor-blink shadow-[0_0_10px_rgba(229,133,186,1)]" />
           </div>
 
-          {/* Decorative lines to simulate paper */}
-          <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.03] bg-[linear-gradient(transparent_95%,_#000_95%)] bg-[length:100%_2rem]" />
+          {/* Subtle decorative lines for a refined "stationery" look */}
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05] bg-[linear-gradient(transparent_97%,_#fff_97%)] bg-[length:100%_2.5rem]" />
+          
+          {/* Bottom Gradient Accent */}
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
         </div>
 
-        {/* Shadow/Envelope depth effect */}
-        <div className="mt-4 flex justify-center opacity-20">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-white to-transparent" />
+        {/* Ambient reflection below the card */}
+        <div className="mt-8 flex justify-center opacity-30 animate-pulse">
+          <div className="h-px w-3/4 bg-gradient-to-r from-transparent via-primary to-transparent" />
         </div>
       </div>
     </section>
