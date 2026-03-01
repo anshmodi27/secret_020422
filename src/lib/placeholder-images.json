@@ -3,13 +3,13 @@
     {
       "id": "hero-bg",
       "description": "Dreamy night sky with stars",
-      "imageUrl": "https://images.unsplash.com/photo-1643832678771-fdd9ed7638ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxuaWdodCUyMHNreSUyMHN0YXJzfGVufDB8fHx8MTc3MjM5MjM4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/first_meet.HEIC",
       "imageHint": "night sky stars"
     },
     {
       "id": "first-meet",
       "description": "Placeholder for our first meeting",
-      "imageUrl": "https://images.unsplash.com/photo-1573879538235-435263a2eeef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjBtZWV0aW5nfGVufDB8fHx8MTc3MjM5MjM4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/first_meet.HEIC",
       "imageHint": "couple meeting"
     },
     {

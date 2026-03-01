@@ -11,7 +11,7 @@ const milestones = [
   {
     id: 'first-meet',
     title: 'FIRST MEET',
-    date: 'Summer 2020',
+    date: 'April 2022',
     description: 'The moment our worlds collided.',
     image: PlaceHolderImages.find(img => img.id === 'first-meet')?.imageUrl || 'https://picsum.photos/seed/first-meet/600/800',
   },

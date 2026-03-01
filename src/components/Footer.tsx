@@ -23,7 +23,7 @@ export function Footer() {
             Forever & Always
           </p>
           <p className="text-[10px] text-muted-foreground/30">
-            Echoes of Us &bull; 2020 - 2024
+            Echoes of Us &bull; 2022 - Forever
           </p>
         </div>
       </div>

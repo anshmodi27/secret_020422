@@ -11,7 +11,7 @@ export function BackgroundMusic() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Path to the local mp3 file in the /public folder
-  const musicUrl = "/background-music.mp3"; 
+  const musicUrl = "/music.mp3"; 
   const fallbackUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
   useEffect(() => {
