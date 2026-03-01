@@ -1,4 +1,2 @@
-import { config } from 'dotenv';
-config();
-
-import '@/ai/flows/generate-wedding-photo.ts';
+// This file is no longer in use as AI generation has been removed.
+export {};

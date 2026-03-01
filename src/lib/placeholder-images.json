@@ -37,6 +37,12 @@
       "imageHint": "anniversary celebration"
     },
     {
+      "id": "forever",
+      "description": "Placeholder for forever",
+      "imageUrl": "https://images.unsplash.com/photo-1514480657081-a987d9a45e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eternity love"
+    },
+    {
       "id": "gallery-1",
       "description": "Gallery image 1",
       "imageUrl": "https://images.unsplash.com/photo-1514480657081-a987d9a45e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyb21hbnRpYyUyMGNvdXBsZXxlbnwwfHx8fDE3NzIzNjEzNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -51,8 +57,14 @@
     {
       "id": "gallery-3",
       "description": "Gallery image 3",
-      "imageUrl": "https://images.unsplash.com/photo-1559494007-9f5847c49d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdW5zZXQlMjBiZWFjaHxlbnwwfHx8fDE3NzIzMTUxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559494007-9f5847c49d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdW5zZXQlMjBiZWFjaHxlbnwwfHx8fDE3NzIzMTE1MTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sunset beach"
+    },
+    {
+      "id": "manifestation",
+      "description": "Our wedding manifestation",
+      "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc3MjM5Mjc0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding couple"
     }
   ]
 }
