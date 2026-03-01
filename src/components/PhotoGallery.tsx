@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import {
@@ -14,16 +14,12 @@ import {
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 // Safely filter for existing placeholder images to avoid "undefined" errors
-const galleryImages = [
-  PlaceHolderImages.find(img => img.id === 'gallery-1'),
-  PlaceHolderImages.find(img => img.id === 'gallery-2'),
-  PlaceHolderImages.find(img => img.id === 'gallery-3'),
-  PlaceHolderImages.find(img => img.id === 'hero-bg'),
-].filter((img): img is ImagePlaceholder => img !== undefined);
+const galleryIds = ['gallery-1', 'gallery-2', 'gallery-3', 'hero-bg'];
+const galleryImages = galleryIds
+  .map(id => PlaceHolderImages.find(img => img.id === id))
+  .filter((img): img is ImagePlaceholder => img !== undefined);
 
 export function PhotoGallery() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
   if (galleryImages.length === 0) return null;
 
   return (
@@ -34,7 +30,7 @@ export function PhotoGallery() {
         <Carousel className="w-full">
           <CarouselContent className="-ml-4">
             {galleryImages.map((image, index) => (
-              <CarouselItem key={image.id + index} className="pl-4 basis-4/5 md:basis-1/2">
+              <CarouselItem key={`${image.id}-${index}`} className="pl-4 basis-4/5 md:basis-1/2">
                 <Dialog>
                   <DialogTrigger asChild>
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 glow-pink cursor-pointer transition-transform hover:scale-[1.02]">

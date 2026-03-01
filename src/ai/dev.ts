@@ -1,5 +1,7 @@
+
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/generate-milestone-paragraph.ts';
-import '@/ai/flows/generate-love-letter.ts';
+// AI flows are disabled as per user request for static content.
+// import '@/ai/flows/generate-milestone-paragraph.ts';
+// import '@/ai/flows/generate-love-letter.ts';
