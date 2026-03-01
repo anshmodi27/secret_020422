@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         body: ['Alegreya', 'serif'],
         headline: ['Playfair Display', 'serif'],
+        pixel: ['"Press Start 2P"', 'cursive'],
         cursive: ['Dancing Script', 'cursive'],
         code: ['monospace'],
       },

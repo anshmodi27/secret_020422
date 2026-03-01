@@ -12,8 +12,8 @@ export function Navbar() {
         <Heart className="text-primary fill-primary w-5 h-5 animate-pulse" />
       </div>
       
-      <div className="font-headline text-lg font-bold tracking-tight text-white/90">
-        4 Years of Us
+      <div className="font-pixel text-[10px] md:text-sm font-bold tracking-tight text-white/90">
+        4 YEARS OF US
       </div>
       
       <div className="flex items-center">

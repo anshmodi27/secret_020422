@@ -12,10 +12,10 @@ export function Hero() {
 
   return (
     <section className="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-      <div className="z-10 animate-fade-in space-y-6">
-        <h1 className="font-headline text-5xl md:text-7xl font-bold text-white text-glow-pink">
-          4 Years, <br />
-          <span className="text-primary">Infinite Love ❤️</span>
+      <div className="z-10 animate-fade-in space-y-8">
+        <h1 className="font-pixel text-2xl md:text-4xl lg:text-5xl font-bold text-white text-glow-pink leading-relaxed">
+          4 YEARS, <br />
+          <span className="text-primary">INFINITE LOVE</span>
         </h1>
         <p className="font-body text-xl md:text-2xl italic text-muted-foreground max-w-md mx-auto">
           "From the first hello to forever…"
@@ -24,9 +24,9 @@ export function Hero() {
         <div className="pt-8">
           <Button 
             onClick={scrollToJourney}
-            className="rounded-full px-8 py-6 text-lg bg-primary hover:bg-primary/80 text-primary-foreground shadow-lg glow-pink transition-all transform hover:scale-105"
+            className="font-pixel text-xs rounded-full px-8 py-6 bg-primary hover:bg-primary/80 text-primary-foreground shadow-lg glow-pink transition-all transform hover:scale-105"
           >
-            Our Journey
+            OUR JOURNEY
           </Button>
         </div>
       </div>

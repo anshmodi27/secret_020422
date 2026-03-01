@@ -25,7 +25,7 @@ export function PhotoGallery() {
   return (
     <section className="py-24 px-6 overflow-hidden">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-headline text-4xl text-center mb-12 text-white">Moments in Time</h2>
+        <h2 className="font-pixel text-xl md:text-2xl text-center mb-12 text-white">MOMENTS IN TIME</h2>
         
         <Carousel className="w-full">
           <CarouselContent className="-ml-4">

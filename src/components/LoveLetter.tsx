@@ -17,12 +17,12 @@ Always Yours`;
 export function LoveLetter() {
   return (
     <section className="py-24 px-6 relative overflow-hidden">
-      <div className="max-w-lg mx-auto">
+      <div className="max-lg mx-auto">
         <div className="glass-card p-10 rounded-3xl glow-pink relative z-10 border-primary/20">
           <div className="absolute -top-12 -left-12 w-32 h-32 bg-primary/20 rounded-full blur-2xl pointer-events-none" />
           <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-accent/20 rounded-full blur-2xl pointer-events-none" />
           
-          <h2 className="font-headline text-3xl mb-8 text-white text-center text-glow-pink">Echoes of My Heart</h2>
+          <h2 className="font-pixel text-lg md:text-xl mb-8 text-white text-center text-glow-pink">ECHOES OF MY HEART</h2>
           
           <div className="space-y-6">
             <div className="font-cursive text-2xl leading-relaxed text-white/90 whitespace-pre-wrap animate-fade-in italic">
