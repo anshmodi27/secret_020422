@@ -9,108 +9,116 @@ import { cn } from "@/lib/utils";
 const milestones = [
   {
     id: "something-cooking",
-    title: "process of building",
+    title: "Where It All Began",
     date: "March 2022",
-    description: "Kind of start for our journey.",
+    description: "The time when something special quietly started between us.",
     image:
       PlaceHolderImages.find((img) => img.id === "something-cooking")
         ?.imageUrl || "https://picsum.photos/seed/first-trip/600/800",
   },
   {
     id: "first-meet",
-    title: "propose",
+    title: "The Proposal",
     date: "April 2022",
-    description: "The moment our worlds collided.",
+    description: "The moment I gathered courage and asked you to be mine.",
     image:
       PlaceHolderImages.find((img) => img.id === "first-meet")?.imageUrl ||
       "https://picsum.photos/seed/first-meet/600/800",
   },
   {
     id: "first-date",
-    title: "Movie Date",
+    title: "Our First Date",
     date: "April 2022",
-    description: "The first date together.",
+    description:
+      "A movie, a little nervousness, and the beginning of many memories.",
     image:
       PlaceHolderImages.find((img) => img.id === "first-date")?.imageUrl ||
       "https://picsum.photos/seed/first-date/600/800",
   },
   {
     id: "first-bday",
-    title: "Your Birthday",
+    title: "Your First Birthday Together",
     date: "June 2022",
-    description: "The first birthday together.",
+    description: "Celebrating your special day together for the first time.",
     image:
       PlaceHolderImages.find((img) => img.id === "first-bday")?.imageUrl ||
       "https://picsum.photos/seed/first-trip/600/800",
   },
   {
     id: "start-of-new",
-    title: "New Clg Life",
+    title: "Another Chapter Together",
     date: "Aug 2023",
-    description: "One Step in life.",
+    description:
+      "From bachelor's to MBA, continuing our journey in the same direction.",
     image:
       PlaceHolderImages.find((img) => img.id === "start-of-new")?.imageUrl ||
       "https://picsum.photos/seed/anniversary/600/800",
   },
   {
     id: "first-trip",
-    title: "Kutch",
+    title: "Our First Trip – Kutch",
     date: "Feb 2024",
-    description: "The first trip together.",
+    description:
+      "Exploring new places and creating unforgettable memories together.",
     image:
       PlaceHolderImages.find((img) => img.id === "first-trip")?.imageUrl ||
       "https://picsum.photos/seed/forever/600/800",
   },
   {
     id: "holi",
-    title: "Holi",
+    title: "Colorful Holi Together",
     date: "March 2024",
-    description: "Enjoying Holi with you.",
+    description:
+      "A day full of colors, laughter, and beautiful moments with you.",
     image:
       PlaceHolderImages.find((img) => img.id === "holi")?.imageUrl ||
       "https://picsum.photos/seed/forever/600/800",
   },
   {
     id: "friends-trip",
-    title: "Mount Abu",
+    title: "Mount Abu Memories",
     date: "June 2024",
-    description: "Trip that provides memories for life.",
+    description:
+      "A trip with friends that gave us memories to cherish forever.",
     image:
       PlaceHolderImages.find((img) => img.id === "friends-trip")?.imageUrl ||
       "https://picsum.photos/seed/forever/600/800",
   },
   {
     id: "night-out",
-    title: "Night Out",
+    title: "A Special Night Out",
     date: "Dec 2024",
-    description: "Night out with you.",
+    description:
+      "A peaceful night filled with conversations, laughter, and us.",
     image:
       PlaceHolderImages.find((img) => img.id === "night-out")?.imageUrl ||
       "https://picsum.photos/seed/forever/600/800",
   },
   {
     id: "last-clg-day",
-    title: "Last Clg Day",
+    title: "Last Day of College",
     date: "May 2025",
-    description: "The last day of college.",
+    description: "The end of our college chapter but not the end of our story.",
     image:
       PlaceHolderImages.find((img) => img.id === "last-clg-day")?.imageUrl ||
       "https://picsum.photos/seed/forever/600/800",
   },
   {
     id: "fight-day",
-    title: "Some Fights",
+    title: "Our Little Fights",
     date: "Dec 2025",
-    description: "some fights with smiles.",
+    description:
+      "Even our arguments became memories that made our bond stronger.",
     image:
       PlaceHolderImages.find((img) => img.id === "fight-day")?.imageUrl ||
       "https://picsum.photos/seed/forever/600/800",
   },
   {
     id: "best-moment",
-    title: "Best Moment of Life",
+    title: "Convocation & A New Hope",
     date: "Feb 2026",
-    description: "unexpected moments of life.",
+    description:
+      "The day we graduated from our MBA and our parents finally met. Now we’re patiently waiting for the next chapter.",
     image:
       PlaceHolderImages.find((img) => img.id === "best-moment")?.imageUrl ||
       "https://picsum.photos/seed/forever/600/800",
